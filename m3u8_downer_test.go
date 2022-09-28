@@ -6,7 +6,10 @@ import (
 )
 
 func TestDowner(t *testing.T) {
-	err := Downer("https://m1.taopianplay1.com:43333/taopian/ecd7f271-487e-48d6-9873-9edc06e79ce8/6898c0aa-5d5a-44c4-b24b-d89aee30fc68/36491/e4ac6b92-c5f8-4ddb-8940-f71054f99212/SD/playlist.m3u8", "F:\\媒体库\\临时文件", "test")
+
+	url := "https://cctvwbcdtxy.liveplay.myqcloud.com/cctvwbcd/cdrmjzcctv1_1_td.m3u8"
+
+	err := Downer(url, "F:\\媒体库\\临时文件", "cctv")
 	fmt.Println(err)
 	//d := NewDownloader(
 	//	WithSavePath("F:\\媒体库\\临时文件"),
